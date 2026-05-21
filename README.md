@@ -1,16 +1,17 @@
+
 <div align="center">
 
 # 🏛️ Auktionshaus Linz am Rhein
 
-### Premium Web Presence — Ultra-Fast, Zero-Dependency Architecture
+### Premium Web Presence — Performance-Driven, Minimal Architecture
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-[![Google PageSpeed](https://img.shields.io/badge/PageSpeed-100%2F100-brightgreen?style=for-the-badge&logo=google&logoColor=white)](#-performance--security)
-[![Status](https://img.shields.io/badge/Status-LIVE-success?style=for-the-badge)](#-live-demo)
+[![Google PageSpeed](https://img.shields.io/badge/PageSpeed-100%2F100-brightgreen?style=for-the-badge&logo=google&logoColor=white)](#performance--security)
+[![Status](https://img.shields.io/badge/Status-LIVE-success?style=for-the-badge)](#live-demo)
 
 </div>
 
@@ -20,13 +21,13 @@
 
 <div align="center">
 
-### ⚡ The website is currently live and in production.
+### Live production deployment
 
 <a href="https://auktionshaus-linz-amrhein.de" target="_blank">
-<img src="https://img.shields.io/badge/🌐_VISIT_LIVE_SITE-auktionshaus--linz--amrhein.de-E34F26?style=for-the-badge&labelColor=1a1a2e&color=e94560" alt="Visit Live Site" height="50"/>
+<img src="https://img.shields.io/badge/🌐_VISIT_SITE-auktionshaus--linz--amrhein.de-E34F26?style=for-the-badge&labelColor=1a1a1a" alt="Live Site"/>
 </a>
 
-**🔗 [https://auktionshaus-linz-amrhein.de](https://auktionshaus-linz-amrhein.de)**
+**https://auktionshaus-linz-amrhein.de**
 
 </div>
 
@@ -34,79 +35,85 @@
 
 ## 📖 About The Project
 
-**Auktionshaus Linz am Rhein** is a premium web presence built for a distinguished auction house located in the historic town of Linz am Rhein, Germany. The project was engineered from the ground up with a clear philosophy: **maximum performance through absolute simplicity**.
+**Auktionshaus Linz am Rhein** is a production website built for an established auction house in Linz am Rhein, Germany.  
+The focus of the project is a clean, trustworthy digital presence with strong emphasis on performance, clarity, and maintainability.
 
-Rather than relying on heavy frameworks, bundlers, or third-party dependencies, the entire frontend was hand-crafted using **pure HTML5, CSS3, and vanilla JavaScript** — achieving what most modern stacks struggle to deliver: a **perfect 100/100 Google PageSpeed score**.
+The entire system was built using **vanilla HTML, CSS, and JavaScript with a lightweight PHP backend**, intentionally avoiding frameworks or external dependencies to ensure long-term stability and fast loading performance.
 
-### 🎯 Project Goals
+### Core Objectives
 
-- **Premium Presentation** — Convey the prestige and trustworthiness of an established auction house through elegant, refined design.
-- **Blazing-Fast Performance** — Deliver sub-second load times with zero render-blocking resources and no dependency overhead.
-- **Legal Compliance** — Ensure full DSGVO (GDPR) compliance across all data processing, forms, and tracking mechanisms.
-- **Turnkey Infrastructure** — Provide the client with a complete, production-ready solution including hosting, domain, and secure email configuration.
+- Present the auction house with a clear and professional digital identity
+- Achieve consistently high performance scores across devices
+- Keep the codebase simple, maintainable, and dependency-free
+- Ensure GDPR-compliant data handling for all user interactions
 
 ---
 
-## ⚡ Performance & Security
+## ⚡ Performance & Architecture
 
-### 🏆 100/100 Google PageSpeed — Zero Dependencies
+The project follows a strict minimal-performance approach:
 
-Achieving a perfect performance score was not accidental. It was the result of deliberate architectural decisions:
+| Area | Implementation |
+|------|----------------|
+| **Frontend** | Pure HTML5, CSS3, Vanilla JavaScript |
+| **JavaScript Strategy** | Event-driven logic, no frameworks, no runtime overhead |
+| **CSS Strategy** | Modular structure, optimized selectors, minimal reflow usage |
+| **Assets** | Compressed images, modern formats, lazy loading where applicable |
+| **Rendering** | No render-blocking scripts, deferred execution pattern |
+| **Caching** | Browser caching via server headers and `.htaccess` rules |
 
-| Strategy               | Implementation                                                                                   |
-| ---------------------- | ------------------------------------------------------------------------------------------------ |
-| **Zero Dependencies**  | No frameworks, no npm packages, no CDN libraries — every line of code is purpose-written.        |
-| **Minimal DOM**        | Semantic, lean HTML structure with no unnecessary wrapper elements.                              |
-| **Optimized Assets**   | All images are compressed and served in modern formats; CSS and JS are minified for production.  |
-| **No Render-Blocking** | Critical CSS is inlined; scripts are deferred or loaded asynchronously.                          |
-| **Efficient Caching**  | Server-side cache headers and `.htaccess` rules ensure repeat visitors experience instant loads. |
+Result: fast initial load time, low resource usage, and stable rendering across devices.
 
-### 🔒 PHP Backend Security
+---
 
-The server-side logic follows security best practices to protect both the client and their users:
+## 🔒 Backend Security (PHP)
 
-- **CSRF Protection** — All form submissions are validated against unique, session-bound tokens to prevent cross-site request forgery attacks.
-- **Rate Limiting** — API endpoints and form handlers enforce request throttling to mitigate brute-force attacks and abuse.
-- **DSGVO (GDPR) Compliance** — Data processing is minimized by design. No unnecessary cookies, no third-party trackers, and all user-facing data handling includes proper consent mechanisms and a comprehensive Datenschutzerklärung.
-- **Input Sanitization** — All user inputs are validated and sanitized server-side before processing.
+The backend is implemented with security-first practices:
+
+- CSRF token validation for all form submissions  
+- Server-side input validation and sanitization (`filter_input`, `htmlspecialchars`)  
+- Basic rate limiting on contact endpoints  
+- Secure session handling with HTTP-only cookies  
+- No third-party tracking or external analytics scripts  
+- GDPR-compliant data processing with minimal storage approach  
 
 ---
 
 ## 🏗️ Infrastructure & Deployment
 
-The project includes a complete infrastructure setup, ensuring the client has a fully operational and maintainable online presence:
+The deployment setup is designed for simplicity and reliability:
 
-| Component        | Details                                                                                                                |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Hosting**      | IONOS managed hosting — configured for optimal PHP performance, SSL/TLS, and uptime.                                   |
-| **Domain & DNS** | Full DNS configuration including A-records, MX-records, and SPF/DKIM for email deliverability.                         |
-| **Email**        | Secure, professional email setup under the client's domain with proper authentication records.                         |
-| **Deployment**   | Automated via **PowerShell** scripts (`deploy.ps1`) for reliable, repeatable deployments.                              |
-| **SEO**          | Complete technical SEO including `sitemap.xml`, `robots.txt`, structured data, and Google Search Console verification. |
+- Hosting: IONOS (SSL-enabled production environment)
+- Deployment: Manual/automated upload via secure transfer script
+- DNS: Configured for stable domain resolution and email routing
+- SEO: Basic technical SEO structure (`robots.txt`, `sitemap.xml`, meta tags)
 
 ---
 
 ## 🧰 Tech Stack
 
-```
-Frontend:       HTML5 · CSS3 · Vanilla JavaScript
-Backend:        PHP (custom, no framework)
-Automation:     PowerShell
-Hosting:        IONOS
-Version Control: Git & GitHub
-```
+Frontend: HTML5 · CSS3 · Vanilla JavaScript  
+Backend: PHP (custom lightweight implementation)  
+Hosting: IONOS  
+Version Control: Git
 
-## ⚖️ License & Intellectual Property
+---
 
-> **⚠️ Proprietary / Showcase Only**
-> This repository serves primarily as a technical portfolio piece. The architecture, concepts, and source code for this client project are proprietary and confidential. Unauthorized copying, modification, distribution, or commercial use is strictly prohibited.
+## ⚖️ License & Usage
+
+> **Showcase Project Only**  
+This project is presented as part of a personal portfolio.  
+All implementation details and code structure are original work and not intended for redistribution or commercial reuse without permission.
+
+---
 
 ## 👤 Author & Contact
 
-**Aseel Marwan Kheder**
-IT-Support Specialist & Web Developer
+**Aseel Marwan Kheder**  
+IT-Support Specialist & Junior Full-Stack Developer  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aseel-marwan-kheder-36b17033b/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aseel-marwan-kheder-36b17033b/)  
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aseel7marwan)
 
-📧 **Email:** [kontakt@aseelmarwan.de](mailto:kontakt@aseelmarwan.de)
+📧 kontakt@aseelmarwan.de
+```
